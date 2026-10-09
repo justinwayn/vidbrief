@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VidBrief — Instant AI Meeting Summaries</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <div class="brand">🎬 VidBrief</div>
+  <div class="tagline">Turn hour-long meetings into 30-second briefs.</div>
+</header>
+
+<main>
+  <section class="input-card">
+    <div class="row">
+      <input id="title" type="text" placeholder="Meeting title (optional)" value="Meeting Brief">
+      <span id="engine-badge" class="badge" title="Which engine produced the summary">engine: …</span>
+    </div>
+    <textarea id="transcript" placeholder="Paste your meeting transcript here (Google Vids transcript, Meet captions, or any notes)…"></textarea>
+    <div class="row actions">
+      <button id="summarize-btn" class="primary">⚡ Generate Brief</button>
+      <button id="sample-btn" class="ghost">Try sample transcript</button>
+    </div>
+    <div id="error" class="error hidden"></div>
+  </section>
+
+  <section id="result" class="result-card hidden">
+    <h2>Summary</h2>
+    <p id="summary"></p>
+    <h2>✅ Action Items</h2>
+    <ul id="actions"></ul>
+    <h2>📌 Key Decisions</h2>
+    <ul id="decisions"></ul>
+    <div class="row actions">
+      <button id="copy-btn" class="primary">📋 Copy markdown</button>
+    </div>
+    <div id="copy-ok" class="ok hidden">Copied! Paste it into Slack, email, or docs.</div>
+  </section>
+
+  <section class="history-card">
+    <h3>Recent briefs <span class="muted">(last 10, stored in your browser)</span></h3>
+    <ul id="history"></ul>
+  </section>
+</main>
+
+<footer>VidBrief MVP — 100% free, no accounts, no cloud. Your transcripts never leave this machine unless you run Ollama locally.</footer>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
