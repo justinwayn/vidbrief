@@ -13,10 +13,27 @@ header { text-align: center; padding: 2rem 1rem 1rem; }
 .brand { font-size: 2rem; font-weight: 800; }
 .tagline { color: var(--muted); margin-top: .25rem; }
 main { max-width: 820px; margin: 0 auto; padding: 0 1rem 3rem; }
-.input-card, .result-card, .history-card {
+.input-card, .result-card, .history-card, .pricing-card {
   background: var(--card); border: 1px solid var(--border);
   border-radius: 12px; padding: 1.25rem; margin-top: 1.25rem;
 }
+.pricing-card h3 { margin-top: 0; }
+.plans { display: flex; gap: 1rem; flex-wrap: wrap; }
+.plan {
+  flex: 1 1 260px; background: var(--bg); border: 1px solid var(--border);
+  border-radius: 10px; padding: 1rem 1.1rem;
+}
+.plan h4 { margin: 0 0 .25rem; font-size: 1.05rem; }
+.plan .price { font-size: 1.6rem; font-weight: 800; margin-bottom: .5rem; }
+.plan .price .per { font-size: .85rem; font-weight: 400; color: var(--muted); }
+.plan ul { margin: .2rem 0 .8rem; padding-left: 1.2rem; }
+.plan li { margin: .3rem 0; }
+.plan-pro { border-color: var(--accent); }
+.buy-btn {
+  display: inline-block; background: var(--accent); color: #111; font-weight: 700;
+  border-radius: 8px; padding: .65rem 1.2rem; text-decoration: none; font-size: 1rem;
+}
+.buy-btn:hover { opacity: .9; }
 .row { display: flex; gap: .75rem; align-items: center; }
 .row.actions { margin-top: .75rem; }
 input[type=text] {
