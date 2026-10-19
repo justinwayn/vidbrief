@@ -1,6 +1,6 @@
 # VidBrief MVP
 
-Instant AI meeting summaries & action item extractor. 100% free — no accounts, no cloud, no paid APIs.
+Instant AI meeting summaries & action item extractor. Free for your first 10 meetings — Pro is $12/month per seat. No paid APIs in the summarizer.
 
 ## What it does
 - Paste a meeting transcript (Google Vids / Meet captions / notes)
